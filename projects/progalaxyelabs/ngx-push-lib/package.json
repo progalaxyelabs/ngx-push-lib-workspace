@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "scripts": {
     "build": "tsc -p tsconfig.schematics.json",
-    "postbuild": "copyfiles schematics/*/schema.json schematics/*/files/** schematics/collection.json ../../dist/progalaxyelabs/ngx-push-lib/"
+    "postbuild": "copyfiles schematics/*/schema.json schematics/*/files/** schematics/ng-add/** schematics/collection.json ../../../dist/progalaxyelabs/ngx-push-lib/"
   },
   "schematics": "./schematics/collection.json",
   "peerDependencies": {
