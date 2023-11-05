@@ -3,5 +3,38 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "@progalaxyelabs/ngx-push-lib": {
+      "projectType": "library",
+      "root": "projects/progalaxyelabs/ngx-push-lib",
+      "sourceRoot": "projects/progalaxyelabs/ngx-push-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/progalaxyelabs/ngx-push-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/progalaxyelabs/ngx-push-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/progalaxyelabs/ngx-push-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/progalaxyelabs/ngx-push-lib/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    }
   }
 }

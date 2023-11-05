@@ -1,0 +1,39 @@
+{
+  "name": "@progalaxyelabs/ngx-push-lib",
+  "version": "0.0.2",
+  "scripts": {
+    "build": "tsc -p tsconfig.schematics.json",
+    "postbuild": "copyfiles schematics/*/schema.json schematics/*/files/** schematics/collection.json ../../dist/progalaxyelabs/ngx-push-lib/"
+  },
+  "schematics": "./schematics/collection.json",
+  "peerDependencies": {
+    "@angular/common": "^16.2.0",
+    "@angular/core": "^16.2.0",
+    "copyfiles": "^2.4.1"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"    
+  },
+  "private": false,
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/progalaxyelabs/ngx-push-lib.git"
+  },
+  "keywords": [
+    "quill",
+    "quilljs",
+    "image",
+    "resize",
+    "sizer"
+  ],
+  "author": "@progalaxyelabs",
+  "contributors": [
+    "Wikia (https://github.com/Wikia)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/progalaxyelabs/ngx-push-lib/issues"
+  },
+  "homepage": "https://github.com/progalaxyelabs/ngx-push-lib#readme"
+}

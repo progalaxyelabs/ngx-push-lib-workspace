@@ -1,6 +1,6 @@
 {
   "name": "ngx-push-lib-workspace",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -23,15 +23,36 @@
     "zone.js": "~0.13.0"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^16.2.9",
+    "@angular-devkit/schematics": "^16.2.9",
     "@angular/cli": "^16.2.7",
     "@angular/compiler-cli": "^16.2.0",
     "@types/jasmine": "~4.3.0",
+    "copyfiles": "^2.4.1",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^16.2.0",
     "typescript": "~5.1.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/progalaxyelabs/ngx-push-lib-workspace.git"
+  },
+  "keywords": [
+    "angular library",
+    "angular cli builder"
+  ],
+  "author": "@progalaxyelabs",
+  "contributors": [
+    "Wikia (https://github.com/Wikia)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/progalaxyelabs/ngx-push-lib-workspace/issues"
+  },
+  "homepage": "https://github.com/progalaxyelabs/ngx-push-lib-workspace#readme"
 }
